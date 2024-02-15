@@ -1,4 +1,4 @@
-C:/Users/andru/CLionProject/math/cmake-build-debug/CMakeFiles/math.dir
+C:/Users/andru/CLionProject/math/cmake-build-debug/CMakeFiles/main_lib.dir
 C:/Users/andru/CLionProject/math/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/andru/CLionProject/math/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 C:/Users/andru/CLionProject/math/cmake-build-debug/CMakeFiles/list_install_components.dir

@@ -41,35 +41,35 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/andru/CLionProject/math/cmake-build-debug/
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target math
+# Object build statements for STATIC_LIBRARY target main_lib
 
 
 #############################################
-# Order-only phony target for math
+# Order-only phony target for main_lib
 
-build cmake_object_order_depends_target_math: phony || CMakeFiles/math.dir
+build cmake_object_order_depends_target_main_lib: phony || CMakeFiles/main_lib.dir
 
-build CMakeFiles/math.dir/library.cpp.obj: CXX_COMPILER__math_unscanned_Debug C$:/Users/andru/CLionProject/math/library.cpp || cmake_object_order_depends_target_math
-  DEP_FILE = CMakeFiles\math.dir\library.cpp.obj.d
+build CMakeFiles/main_lib.dir/main_lib/library.cpp.obj: CXX_COMPILER__main_lib_unscanned_Debug C$:/Users/andru/CLionProject/math/main_lib/library.cpp || cmake_object_order_depends_target_main_lib
+  DEP_FILE = CMakeFiles\main_lib.dir\main_lib\library.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\math.dir
-  OBJECT_FILE_DIR = CMakeFiles\math.dir
+  OBJECT_DIR = CMakeFiles\main_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\main_lib.dir\main_lib
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target math
+# Link build statements for STATIC_LIBRARY target main_lib
 
 
 #############################################
-# Link the static library libmath.a
+# Link the static library libmain_lib.a
 
-build libmath.a: CXX_STATIC_LIBRARY_LINKER__math_Debug CMakeFiles/math.dir/library.cpp.obj
+build libmain_lib.a: CXX_STATIC_LIBRARY_LINKER__main_lib_Debug CMakeFiles/main_lib.dir/main_lib/library.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles\math.dir
+  OBJECT_DIR = CMakeFiles\main_lib.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = libmath.a
-  TARGET_PDB = math.a.dbg
+  TARGET_FILE = libmain_lib.a
+  TARGET_PDB = main_lib.a.dbg
 
 
 #############################################
@@ -148,7 +148,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 #############################################
 # Order-only phony target for Google_Tests_run
 
-build cmake_object_order_depends_target_Google_Tests_run: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_math
+build cmake_object_order_depends_target_Google_Tests_run: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_main_lib
 
 build Google_tests/CMakeFiles/Google_Tests_run.dir/test_of_casts.cpp.obj: CXX_COMPILER__Google_Tests_run_unscanned_Debug C$:/Users/andru/CLionProject/math/Google_tests/test_of_casts.cpp || cmake_object_order_depends_target_Google_Tests_run
   DEP_FILE = Google_tests\CMakeFiles\Google_Tests_run.dir\test_of_casts.cpp.obj.d
@@ -165,9 +165,9 @@ build Google_tests/CMakeFiles/Google_Tests_run.dir/test_of_casts.cpp.obj: CXX_CO
 #############################################
 # Link the executable Google_tests\Google_Tests_run.exe
 
-build Google_tests/Google_Tests_run.exe: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug Google_tests/CMakeFiles/Google_Tests_run.dir/test_of_casts.cpp.obj | libmath.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libmath.a
+build Google_tests/Google_Tests_run.exe: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug Google_tests/CMakeFiles/Google_Tests_run.dir/test_of_casts.cpp.obj | libmain_lib.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libmain_lib.a
   FLAGS = -g
-  LINK_LIBRARIES = libmath.a  lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libmain_lib.a  lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -601,7 +601,7 @@ build libgtest.a: phony lib/libgtest.a
 
 build libgtest_main.a: phony lib/libgtest_main.a
 
-build math: phony libmath.a
+build main_lib: phony libmain_lib.a
 
 # =============================================================================
 # Folder targets.
@@ -611,7 +611,7 @@ build math: phony libmath.a
 #############################################
 # Folder: C:/Users/andru/CLionProject/math/cmake-build-debug
 
-build all: phony libmath.a Google_tests/all
+build all: phony libmain_lib.a Google_tests/all
 
 # =============================================================================
 
