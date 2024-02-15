@@ -1,0 +1,7 @@
+# ninja log v5
+2	1260	7297117429992777	CMakeFiles/math.dir/library.cpp.obj	2e1929ff86efb240
+1267	1749	7297117434882204	libmath.a	c8ad3f50bf7afe6
+80	3614	7297177007712903	Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	858f4fe29a8fdf07
+67	3964	7297177011228997	Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	1c67ce9122bf130b
+60	6159	7297177033089074	Google_tests/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	cc20cca33ee94da8
+72	14906	7297177120458799	Google_tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	503752f113c6bbc5
