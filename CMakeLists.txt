@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.27)
-project(math)
+project(bignum)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_library(main_lib STATIC main_lib/library.cpp)
+include_directories(main_lib)
+add_subdirectory(main_lib)
 
 add_subdirectory(Google_tests)

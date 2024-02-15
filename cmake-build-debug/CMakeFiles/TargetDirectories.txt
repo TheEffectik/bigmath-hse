@@ -1,10 +1,16 @@
-C:/Users/andru/CLionProject/math/cmake-build-debug/CMakeFiles/main_lib.dir
 C:/Users/andru/CLionProject/math/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/andru/CLionProject/math/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 C:/Users/andru/CLionProject/math/cmake-build-debug/CMakeFiles/list_install_components.dir
 C:/Users/andru/CLionProject/math/cmake-build-debug/CMakeFiles/install.dir
 C:/Users/andru/CLionProject/math/cmake-build-debug/CMakeFiles/install/local.dir
 C:/Users/andru/CLionProject/math/cmake-build-debug/CMakeFiles/install/strip.dir
+C:/Users/andru/CLionProject/math/cmake-build-debug/main_lib/CMakeFiles/main_lib.dir
+C:/Users/andru/CLionProject/math/cmake-build-debug/main_lib/CMakeFiles/edit_cache.dir
+C:/Users/andru/CLionProject/math/cmake-build-debug/main_lib/CMakeFiles/rebuild_cache.dir
+C:/Users/andru/CLionProject/math/cmake-build-debug/main_lib/CMakeFiles/list_install_components.dir
+C:/Users/andru/CLionProject/math/cmake-build-debug/main_lib/CMakeFiles/install.dir
+C:/Users/andru/CLionProject/math/cmake-build-debug/main_lib/CMakeFiles/install/local.dir
+C:/Users/andru/CLionProject/math/cmake-build-debug/main_lib/CMakeFiles/install/strip.dir
 C:/Users/andru/CLionProject/math/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir
 C:/Users/andru/CLionProject/math/cmake-build-debug/Google_tests/CMakeFiles/edit_cache.dir
 C:/Users/andru/CLionProject/math/cmake-build-debug/Google_tests/CMakeFiles/rebuild_cache.dir

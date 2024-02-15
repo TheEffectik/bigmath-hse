@@ -6,30 +6,34 @@ bignum::bignum()
 {
     number = "0";
     sign = false;
-    size = 0;
     real_size = 0;
 }
 
 bignum::bignum(int x) {
     if(x < 0) {
-        sign = false;
+        sign = true;
         x *= -1;
-    }
-    (*this).number = std::to_string(x);
-    size = number.length();
-    real_size = size;
+    } else sign = false;
+    number = std::to_string(x);
+    real_size = number.length();
 }
 
 bignum::bignum(float x) {
     if(x < 0) {
-        (*this).sign = false;
+        sign = true;
         x *= -1;
-    }
-    (*this).number = std::to_string(x);
+    } else sign = false;
+
+    number = std::to_string(x);
+    real_size = number.find('.');
 }
 
-int main(){
-    float x = 1.2;
-    const bignum res(x);
-    std::cout << res.number;
+bignum::bignum(double x) {
+    if(x < 0) {
+        sign = true;
+        x *= -1;
+    } else sign = false;
+
+    number = std::to_string(x);
+    real_size = number.find('.');
 }

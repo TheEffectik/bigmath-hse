@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: math
+# Project: bignum
 # Configurations: Debug
 # =============================================================================
 
@@ -40,37 +40,6 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = C$:/Users/andru/CLionProject/math/cmake-build-debug/
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target main_lib
-
-
-#############################################
-# Order-only phony target for main_lib
-
-build cmake_object_order_depends_target_main_lib: phony || CMakeFiles/main_lib.dir
-
-build CMakeFiles/main_lib.dir/main_lib/library.cpp.obj: CXX_COMPILER__main_lib_unscanned_Debug C$:/Users/andru/CLionProject/math/main_lib/library.cpp || cmake_object_order_depends_target_main_lib
-  DEP_FILE = CMakeFiles\main_lib.dir\main_lib\library.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\main_lib.dir
-  OBJECT_FILE_DIR = CMakeFiles\main_lib.dir\main_lib
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target main_lib
-
-
-#############################################
-# Link the static library libmain_lib.a
-
-build libmain_lib.a: CXX_STATIC_LIBRARY_LINKER__main_lib_Debug CMakeFiles/main_lib.dir/main_lib/library.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles\main_lib.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = libmain_lib.a
-  TARGET_PDB = main_lib.a.dbg
-
 
 #############################################
 # Utility command for edit_cache
@@ -142,6 +111,108 @@ build install/strip: phony CMakeFiles/install/strip.util
 # =============================================================================
 
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target main_lib
+
+
+#############################################
+# Order-only phony target for main_lib
+
+build cmake_object_order_depends_target_main_lib: phony || main_lib/CMakeFiles/main_lib.dir
+
+build main_lib/CMakeFiles/main_lib.dir/library.cpp.obj: CXX_COMPILER__main_lib_unscanned_Debug C$:/Users/andru/CLionProject/math/main_lib/library.cpp || cmake_object_order_depends_target_main_lib
+  DEP_FILE = main_lib\CMakeFiles\main_lib.dir\library.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/andru/CLionProject/math/main_lib
+  OBJECT_DIR = main_lib\CMakeFiles\main_lib.dir
+  OBJECT_FILE_DIR = main_lib\CMakeFiles\main_lib.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target main_lib
+
+
+#############################################
+# Link the static library main_lib\libmain_lib.a
+
+build main_lib/libmain_lib.a: CXX_STATIC_LIBRARY_LINKER__main_lib_Debug main_lib/CMakeFiles/main_lib.dir/library.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = main_lib\CMakeFiles\main_lib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = main_lib\libmain_lib.a
+  TARGET_PDB = main_lib.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build main_lib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\andru\CLionProject\math\cmake-build-debug\main_lib && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build main_lib/edit_cache: phony main_lib/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build main_lib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\andru\CLionProject\math\cmake-build-debug\main_lib && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\andru\CLionProject\math -BC:\Users\andru\CLionProject\math\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build main_lib/rebuild_cache: phony main_lib/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build main_lib/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build main_lib/CMakeFiles/install.util: CUSTOM_COMMAND main_lib/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\andru\CLionProject\math\cmake-build-debug\main_lib && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build main_lib/install: phony main_lib/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build main_lib/CMakeFiles/install/local.util: CUSTOM_COMMAND main_lib/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\andru\CLionProject\math\cmake-build-debug\main_lib && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build main_lib/install/local: phony main_lib/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build main_lib/CMakeFiles/install/strip.util: CUSTOM_COMMAND main_lib/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\andru\CLionProject\math\cmake-build-debug\main_lib && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build main_lib/install/strip: phony main_lib/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/andru/CLionProject/math/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
 # Object build statements for EXECUTABLE target Google_Tests_run
 
 
@@ -153,7 +224,7 @@ build cmake_object_order_depends_target_Google_Tests_run: phony || cmake_object_
 build Google_tests/CMakeFiles/Google_Tests_run.dir/test_of_casts.cpp.obj: CXX_COMPILER__Google_Tests_run_unscanned_Debug C$:/Users/andru/CLionProject/math/Google_tests/test_of_casts.cpp || cmake_object_order_depends_target_Google_Tests_run
   DEP_FILE = Google_tests\CMakeFiles\Google_Tests_run.dir\test_of_casts.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/andru/CLionProject/math/Google_tests/googletest/include -IC:/Users/andru/CLionProject/math/Google_tests/googletest -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest/include -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest
+  INCLUDES = -IC:/Users/andru/CLionProject/math/main_lib -IC:/Users/andru/CLionProject/math/Google_tests/googletest/include -IC:/Users/andru/CLionProject/math/Google_tests/googletest -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest/include -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest
   OBJECT_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
   OBJECT_FILE_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
 
@@ -165,9 +236,9 @@ build Google_tests/CMakeFiles/Google_Tests_run.dir/test_of_casts.cpp.obj: CXX_CO
 #############################################
 # Link the executable Google_tests\Google_Tests_run.exe
 
-build Google_tests/Google_Tests_run.exe: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug Google_tests/CMakeFiles/Google_Tests_run.dir/test_of_casts.cpp.obj | libmain_lib.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libmain_lib.a
+build Google_tests/Google_Tests_run.exe: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug Google_tests/CMakeFiles/Google_Tests_run.dir/test_of_casts.cpp.obj | main_lib/libmain_lib.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a main_lib/libmain_lib.a
   FLAGS = -g
-  LINK_LIBRARIES = libmain_lib.a  lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = main_lib/libmain_lib.a  lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -327,7 +398,7 @@ build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depen
 build Google_tests/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_unscanned_Debug C$:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
   DEP_FILE = Google_tests\lib\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
   FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -IC:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/include -IC:/Users/andru/CLionProject/math/Google_tests/lib/googlemock -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest/include -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest
+  INCLUDES = -IC:/Users/andru/CLionProject/math/main_lib -IC:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/include -IC:/Users/andru/CLionProject/math/Google_tests/lib/googlemock -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest/include -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest
   OBJECT_DIR = Google_tests\lib\googlemock\CMakeFiles\gmock.dir
   OBJECT_FILE_DIR = Google_tests\lib\googlemock\CMakeFiles\gmock.dir\src
 
@@ -359,7 +430,7 @@ build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_
 build Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
   DEP_FILE = Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
   FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/include -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googlemock -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest/include -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest
+  INCLUDES = -IC:/Users/andru/CLionProject/math/main_lib -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/include -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googlemock -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest/include -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest
   OBJECT_DIR = Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir
   OBJECT_FILE_DIR = Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\src
 
@@ -461,7 +532,7 @@ build cmake_object_order_depends_target_gtest: phony || Google_tests/lib/googlet
 build Google_tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_unscanned_Debug C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
   DEP_FILE = Google_tests\lib\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
   FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -IC:/Users/andru/CLionProject/math/Google_tests/lib/googletest/include -IC:/Users/andru/CLionProject/math/Google_tests/lib/googletest
+  INCLUDES = -IC:/Users/andru/CLionProject/math/main_lib -IC:/Users/andru/CLionProject/math/Google_tests/lib/googletest/include -IC:/Users/andru/CLionProject/math/Google_tests/lib/googletest
   OBJECT_DIR = Google_tests\lib\googletest\CMakeFiles\gtest.dir
   OBJECT_FILE_DIR = Google_tests\lib\googletest\CMakeFiles\gtest.dir\src
 
@@ -493,7 +564,7 @@ build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_
 build Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_unscanned_Debug C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
   DEP_FILE = Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
   FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest/include -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest
+  INCLUDES = -IC:/Users/andru/CLionProject/math/main_lib -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest/include -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest
   OBJECT_DIR = Google_tests\lib\googletest\CMakeFiles\gtest_main.dir
   OBJECT_FILE_DIR = Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\src
 
@@ -601,7 +672,9 @@ build libgtest.a: phony lib/libgtest.a
 
 build libgtest_main.a: phony lib/libgtest_main.a
 
-build main_lib: phony libmain_lib.a
+build libmain_lib.a: phony main_lib/libmain_lib.a
+
+build main_lib: phony main_lib/libmain_lib.a
 
 # =============================================================================
 # Folder targets.
@@ -611,7 +684,7 @@ build main_lib: phony libmain_lib.a
 #############################################
 # Folder: C:/Users/andru/CLionProject/math/cmake-build-debug
 
-build all: phony libmain_lib.a Google_tests/all
+build all: phony main_lib/all Google_tests/all
 
 # =============================================================================
 
@@ -642,20 +715,27 @@ build Google_tests/lib/googlemock/all: phony lib/libgmock.a lib/libgmock_main.a 
 build Google_tests/lib/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 
 # =============================================================================
+
+#############################################
+# Folder: C:/Users/andru/CLionProject/math/cmake-build-debug/main_lib
+
+build main_lib/all: phony main_lib/libmain_lib.a
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/andru/CLionProject/math/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/cmake/gmock.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/cmake/gmock_main.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/Config.cmake.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/gtest.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/gtest_main.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/andru/CLionProject/math/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/cmake/gmock.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/cmake/gmock_main.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/Config.cmake.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/gtest.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/gtest_main.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/internal_utils.cmake C$:/Users/andru/CLionProject/math/main_lib/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/andru/CLionProject/math/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/cmake/gmock.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/cmake/gmock_main.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/Config.cmake.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/gtest.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/gtest_main.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/andru/CLionProject/math/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/cmake/gmock.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googlemock/cmake/gmock_main.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/CMakeLists.txt C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/Config.cmake.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/gtest.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/gtest_main.pc.in C$:/Users/andru/CLionProject/math/Google_tests/lib/googletest/cmake/internal_utils.cmake C$:/Users/andru/CLionProject/math/main_lib/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
 
 
 #############################################

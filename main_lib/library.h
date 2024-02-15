@@ -10,9 +10,9 @@ class bignum {
         bignum();
         bignum(int x);
         bignum(float x);
+        bignum(double x);
 
     std::string number;
-    size_t size;
     size_t real_size;
     bool sign;
 };

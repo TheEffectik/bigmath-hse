@@ -1,4 +1,4 @@
-project(math)
+project(main_lib)
 
 set(HEADER_FILES
         library.h)
@@ -6,4 +6,4 @@ set(HEADER_FILES
 set(SOURCE_FILES
         library.cpp)
 
-add_library(library STATIC ${SOURCE_FILES} ${HEADER_FILES})
+add_library(main_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})
