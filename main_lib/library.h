@@ -9,8 +9,10 @@ class bignum {
     public:
         bignum();
         bignum(int x);
+        bignum(long long x);
         bignum(float x);
         bignum(double x);
+        bignum(std::string x);
 
     std::string number;
     size_t real_size;
