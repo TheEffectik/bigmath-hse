@@ -14,7 +14,8 @@ namespace bigNum{
         bignum(float x);
         bignum(double x);
         bignum(std::string x);
-        static bignum add(const bignum& a, const bignum& b); // add to private
+        static bignum uadd(const bignum& a, const bignum& b); // add to private
+        static bignum udiv(const bignum& a, const bignum& b); // add to private
 
         std::string number;
         int real_size;
@@ -22,5 +23,7 @@ namespace bigNum{
     };
 }
 bigNum::bignum operator""_bn(const char* str);
+bigNum::bignum operator-(const bigNum::bignum &a);
+
 
 #endif //MATH_LIBRARY_H

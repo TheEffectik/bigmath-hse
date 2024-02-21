@@ -13,13 +13,13 @@ TEST(TestOfcasts, RealSizeInNUmbers) {
     x = 132;
     ASSERT_EQ(x.real_size, 3);
 
-    float a = 100.23;
+    bignum a = 100.23_bn;
     ASSERT_EQ(bignum(a).real_size, 3);
 
     a = 100;
     ASSERT_EQ(bignum(a).real_size, 3);
 
-    double b = 100.23;
+    bignum b = 100.23_bn;
     ASSERT_EQ(bignum(a).real_size, 3);
 
     b = 100;
@@ -28,13 +28,13 @@ TEST(TestOfcasts, RealSizeInNUmbers) {
 
 
 TEST(TestOfCasts, SignInNumbers) {
-    bignum x = bignum(-1);
+    bignum x = -1_bn;
     ASSERT_EQ(x.sign, true);
 
-    x = bignum(-1.123);
+    x = -1.123_bn;
     ASSERT_EQ(x.sign, true);
 
-    x = bignum(123.123);
+    x = 123.123_bn;
     ASSERT_EQ(x.sign, false);
 
     x = bignum(1);
@@ -53,7 +53,7 @@ TEST(TestOfCast, String) {
 
     ASSERT_EQ(x2.sign, true);
     ASSERT_EQ(x2.real_size, 1);
-    ASSERT_EQ(x2.number, "1.2");
+    ASSERT_EQ(x2.number, "12");
 }
 
 TEST(TestOfCast, StringFailure) {
