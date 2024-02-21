@@ -4,7 +4,8 @@
 #include<iostream>
 #include<string>
 
-class bignum {
+namespace bigNum{
+    class bignum {
 
     public:
         bignum();
@@ -13,10 +14,13 @@ class bignum {
         bignum(float x);
         bignum(double x);
         bignum(std::string x);
+        static bignum add(const bignum& a, const bignum& b); // add to private
 
-    std::string number;
-    size_t real_size;
-    bool sign;
-};
+        std::string number;
+        int real_size;
+        bool sign;
+    };
+}
+bigNum::bignum operator""_bn(const char* str);
 
 #endif //MATH_LIBRARY_H

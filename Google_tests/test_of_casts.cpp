@@ -2,8 +2,9 @@
 #include "gtest/gtest.h"
 #include "library.h"
 
+using namespace bigNum;
 TEST(TestOfcasts, RealSizeInNUmbers) {
-    bignum x = bignum(100.23);
+    bignum x = 123_bn;
     ASSERT_EQ(x.real_size, 3);
 
     x = bignum(123);
