@@ -37,4 +37,30 @@ namespace bigNum{
         x.number = std::string(x.number.rbegin(), x.number.rend());
         return x;
     }
+
+    bignum bignum::add(const bignum&a, const bignum&b){
+        if(a.sign == b.sign){
+            bignum x = uadd(a, b);
+            x.sign = a.sign;
+            return x;
+        }
+        if(a.sign){
+            if(a > -b){
+                bignum x = uadd(a, b);
+                x.sign = true;
+                return x;
+            }
+            bignum x = uadd(b, a);
+            x.sign = false;
+            return x;
+        }
+        if(b > -a){
+            bignum x = uadd(a, b);
+            x.sign = false;
+            return x;
+        }
+        bignum x = uadd(b, a);
+        x.sign = true;
+        return x;
+    }
 }

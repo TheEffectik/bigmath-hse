@@ -50,7 +50,30 @@ namespace bigNum {
             number.pop_back();
         }
     }
-
+    bool operator>(const bigNum::bignum& a, const bigNum::bignum& b) {
+        if(a.sign != b.sign) return !a.sign;
+        if(a.real_size != b.real_size) return (a.real_size < b.real_size) == a.sign;
+        for(int i = 0; i < std::max(a.number.length(), b.number.length()); i++){
+            char a_digit = '0';
+            char b_digit = '0';
+            if(i < a.number.length()) a_digit = a.number[i];
+            if(i < b.number.length()) b_digit = b.number[i];
+            if(a_digit != b_digit) return (a.number[i] < b.number[i]) == a.sign;
+        }
+        return false;
+    }
+    bool operator<(const bigNum::bignum& a, const bigNum::bignum& b) {
+        return b > a;
+    }
+    bool operator>=(const bigNum::bignum& a, const bigNum::bignum& b) {
+        return !(a < b);
+    }
+    bool operator<=(const bigNum::bignum& a, const bigNum::bignum& b) {
+        return !(a > b);
+    }
+    bool operator==(const bigNum::bignum& a, const bigNum::bignum& b) {
+        return !(a < b) && !(a > b);
+    }
 }
 
 bigNum::bignum operator ""_bn(const char *str) {
@@ -62,3 +85,4 @@ bigNum::bignum operator-(const bigNum::bignum &a) {
     x.sign = !x.sign;
     return x;
 }
+

@@ -7,6 +7,7 @@ set(SOURCE_FILES
         library.cpp
         operations/add.cpp
         operations/div.cpp
+        operations/multiplication.cpp
 )
 
 add_library(main_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})
