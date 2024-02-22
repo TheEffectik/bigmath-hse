@@ -9,9 +9,10 @@ include_directories(googletest/include googletest)
 # 'test1.cpp test2.cpp' are source files with tests
 add_executable(Google_Tests_run test_of_casts.cpp
         add.cpp
-        div.cpp
-        comparing.cpp
-        multiplication.cpp)
+        test_subtraction.cpp
+        test_comparing.cpp
+        test_multiplication.cpp
+        test_division.cpp)
 
 target_link_libraries(Google_Tests_run main_lib)
 

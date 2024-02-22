@@ -77,6 +77,20 @@ namespace bigNum {
     bool operator==(const bigNum::bignum &a, const bigNum::bignum &b) {
         return !(a < b) && !(a > b);
     }
+
+    bignum operator+(const bignum &a, const bignum &b) {
+        return bignum::add(a, b);
+    }
+
+    bignum operator-(const bignum &a, const bignum &b) {
+        return bignum::sub(a, b);
+    }
+
+    bignum operator*(const bignum &a, const bignum &b) {
+        return bignum::mul(a, b);
+    }
+
+
 }
 
 bigNum::bignum operator ""_bn(const char *str) {

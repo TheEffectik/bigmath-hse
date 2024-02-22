@@ -133,8 +133,8 @@ build main_lib/CMakeFiles/main_lib.dir/operations/add.cpp.obj: CXX_COMPILER__mai
   OBJECT_DIR = main_lib\CMakeFiles\main_lib.dir
   OBJECT_FILE_DIR = main_lib\CMakeFiles\main_lib.dir\operations
 
-build main_lib/CMakeFiles/main_lib.dir/operations/div.cpp.obj: CXX_COMPILER__main_lib_unscanned_Debug C$:/Users/andru/CLionProject/math/main_lib/operations/div.cpp || cmake_object_order_depends_target_main_lib
-  DEP_FILE = main_lib\CMakeFiles\main_lib.dir\operations\div.cpp.obj.d
+build main_lib/CMakeFiles/main_lib.dir/operations/subtraction.cpp.obj: CXX_COMPILER__main_lib_unscanned_Debug C$:/Users/andru/CLionProject/math/main_lib/operations/subtraction.cpp || cmake_object_order_depends_target_main_lib
+  DEP_FILE = main_lib\CMakeFiles\main_lib.dir\operations\subtraction.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/andru/CLionProject/math/main_lib
   OBJECT_DIR = main_lib\CMakeFiles\main_lib.dir
@@ -142,6 +142,13 @@ build main_lib/CMakeFiles/main_lib.dir/operations/div.cpp.obj: CXX_COMPILER__mai
 
 build main_lib/CMakeFiles/main_lib.dir/operations/multiplication.cpp.obj: CXX_COMPILER__main_lib_unscanned_Debug C$:/Users/andru/CLionProject/math/main_lib/operations/multiplication.cpp || cmake_object_order_depends_target_main_lib
   DEP_FILE = main_lib\CMakeFiles\main_lib.dir\operations\multiplication.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/andru/CLionProject/math/main_lib
+  OBJECT_DIR = main_lib\CMakeFiles\main_lib.dir
+  OBJECT_FILE_DIR = main_lib\CMakeFiles\main_lib.dir\operations
+
+build main_lib/CMakeFiles/main_lib.dir/operations/division.cpp.obj: CXX_COMPILER__main_lib_unscanned_Debug C$:/Users/andru/CLionProject/math/main_lib/operations/division.cpp || cmake_object_order_depends_target_main_lib
+  DEP_FILE = main_lib\CMakeFiles\main_lib.dir\operations\division.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/andru/CLionProject/math/main_lib
   OBJECT_DIR = main_lib\CMakeFiles\main_lib.dir
@@ -155,7 +162,7 @@ build main_lib/CMakeFiles/main_lib.dir/operations/multiplication.cpp.obj: CXX_CO
 #############################################
 # Link the static library main_lib\libmain_lib.a
 
-build main_lib/libmain_lib.a: CXX_STATIC_LIBRARY_LINKER__main_lib_Debug main_lib/CMakeFiles/main_lib.dir/library.cpp.obj main_lib/CMakeFiles/main_lib.dir/operations/add.cpp.obj main_lib/CMakeFiles/main_lib.dir/operations/div.cpp.obj main_lib/CMakeFiles/main_lib.dir/operations/multiplication.cpp.obj
+build main_lib/libmain_lib.a: CXX_STATIC_LIBRARY_LINKER__main_lib_Debug main_lib/CMakeFiles/main_lib.dir/library.cpp.obj main_lib/CMakeFiles/main_lib.dir/operations/add.cpp.obj main_lib/CMakeFiles/main_lib.dir/operations/subtraction.cpp.obj main_lib/CMakeFiles/main_lib.dir/operations/multiplication.cpp.obj main_lib/CMakeFiles/main_lib.dir/operations/division.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = main_lib\CMakeFiles\main_lib.dir
   POST_BUILD = cd .
@@ -256,22 +263,29 @@ build Google_tests/CMakeFiles/Google_Tests_run.dir/add.cpp.obj: CXX_COMPILER__Go
   OBJECT_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
   OBJECT_FILE_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
 
-build Google_tests/CMakeFiles/Google_Tests_run.dir/div.cpp.obj: CXX_COMPILER__Google_Tests_run_unscanned_Debug C$:/Users/andru/CLionProject/math/Google_tests/div.cpp || cmake_object_order_depends_target_Google_Tests_run
-  DEP_FILE = Google_tests\CMakeFiles\Google_Tests_run.dir\div.cpp.obj.d
+build Google_tests/CMakeFiles/Google_Tests_run.dir/test_subtraction.cpp.obj: CXX_COMPILER__Google_Tests_run_unscanned_Debug C$:/Users/andru/CLionProject/math/Google_tests/test_subtraction.cpp || cmake_object_order_depends_target_Google_Tests_run
+  DEP_FILE = Google_tests\CMakeFiles\Google_Tests_run.dir\test_subtraction.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/andru/CLionProject/math/main_lib -IC:/Users/andru/CLionProject/math/Google_tests/googletest/include -IC:/Users/andru/CLionProject/math/Google_tests/googletest -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest/include -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest
   OBJECT_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
   OBJECT_FILE_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
 
-build Google_tests/CMakeFiles/Google_Tests_run.dir/comparing.cpp.obj: CXX_COMPILER__Google_Tests_run_unscanned_Debug C$:/Users/andru/CLionProject/math/Google_tests/comparing.cpp || cmake_object_order_depends_target_Google_Tests_run
-  DEP_FILE = Google_tests\CMakeFiles\Google_Tests_run.dir\comparing.cpp.obj.d
+build Google_tests/CMakeFiles/Google_Tests_run.dir/test_comparing.cpp.obj: CXX_COMPILER__Google_Tests_run_unscanned_Debug C$:/Users/andru/CLionProject/math/Google_tests/test_comparing.cpp || cmake_object_order_depends_target_Google_Tests_run
+  DEP_FILE = Google_tests\CMakeFiles\Google_Tests_run.dir\test_comparing.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/andru/CLionProject/math/main_lib -IC:/Users/andru/CLionProject/math/Google_tests/googletest/include -IC:/Users/andru/CLionProject/math/Google_tests/googletest -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest/include -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest
   OBJECT_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
   OBJECT_FILE_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
 
-build Google_tests/CMakeFiles/Google_Tests_run.dir/multiplication.cpp.obj: CXX_COMPILER__Google_Tests_run_unscanned_Debug C$:/Users/andru/CLionProject/math/Google_tests/multiplication.cpp || cmake_object_order_depends_target_Google_Tests_run
-  DEP_FILE = Google_tests\CMakeFiles\Google_Tests_run.dir\multiplication.cpp.obj.d
+build Google_tests/CMakeFiles/Google_Tests_run.dir/test_multiplication.cpp.obj: CXX_COMPILER__Google_Tests_run_unscanned_Debug C$:/Users/andru/CLionProject/math/Google_tests/test_multiplication.cpp || cmake_object_order_depends_target_Google_Tests_run
+  DEP_FILE = Google_tests\CMakeFiles\Google_Tests_run.dir\test_multiplication.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/andru/CLionProject/math/main_lib -IC:/Users/andru/CLionProject/math/Google_tests/googletest/include -IC:/Users/andru/CLionProject/math/Google_tests/googletest -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest/include -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest
+  OBJECT_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
+  OBJECT_FILE_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
+
+build Google_tests/CMakeFiles/Google_Tests_run.dir/test_division.cpp.obj: CXX_COMPILER__Google_Tests_run_unscanned_Debug C$:/Users/andru/CLionProject/math/Google_tests/test_division.cpp || cmake_object_order_depends_target_Google_Tests_run
+  DEP_FILE = Google_tests\CMakeFiles\Google_Tests_run.dir\test_division.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/andru/CLionProject/math/main_lib -IC:/Users/andru/CLionProject/math/Google_tests/googletest/include -IC:/Users/andru/CLionProject/math/Google_tests/googletest -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest/include -isystem C:/Users/andru/CLionProject/math/Google_tests/lib/googletest
   OBJECT_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
@@ -285,7 +299,7 @@ build Google_tests/CMakeFiles/Google_Tests_run.dir/multiplication.cpp.obj: CXX_C
 #############################################
 # Link the executable Google_tests\Google_Tests_run.exe
 
-build Google_tests/Google_Tests_run.exe: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug Google_tests/CMakeFiles/Google_Tests_run.dir/test_of_casts.cpp.obj Google_tests/CMakeFiles/Google_Tests_run.dir/add.cpp.obj Google_tests/CMakeFiles/Google_Tests_run.dir/div.cpp.obj Google_tests/CMakeFiles/Google_Tests_run.dir/comparing.cpp.obj Google_tests/CMakeFiles/Google_Tests_run.dir/multiplication.cpp.obj | main_lib/libmain_lib.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a main_lib/libmain_lib.a
+build Google_tests/Google_Tests_run.exe: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug Google_tests/CMakeFiles/Google_Tests_run.dir/test_of_casts.cpp.obj Google_tests/CMakeFiles/Google_Tests_run.dir/add.cpp.obj Google_tests/CMakeFiles/Google_Tests_run.dir/test_subtraction.cpp.obj Google_tests/CMakeFiles/Google_Tests_run.dir/test_comparing.cpp.obj Google_tests/CMakeFiles/Google_Tests_run.dir/test_multiplication.cpp.obj Google_tests/CMakeFiles/Google_Tests_run.dir/test_division.cpp.obj | main_lib/libmain_lib.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a main_lib/libmain_lib.a
   FLAGS = -g
   LINK_LIBRARIES = main_lib/libmain_lib.a  lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir

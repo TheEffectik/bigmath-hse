@@ -22,10 +22,12 @@ namespace bigNum {
         bignum(std::string x);
 
         static bignum uadd(const bignum &a, const bignum &b); // add to private
-        static bignum udiv(const bignum &a, const bignum &b); // add to private
         static bignum add(const bignum &a, const bignum &b); // add to private
+        static bignum usub(const bignum &a, const bignum &b); // add to private
+        static bignum sub(const bignum &a, const bignum &b); // add to private
 
-        static bignum mul(const bignum &a, const bignum &b);
+        static bignum mul(const bignum &a, const bignum &b); // add to private
+        static bignum div(const bignum &a, const bignum &b, int precision); //  add to private
 
         friend bool operator>(const bignum &a, const bignum &b);
 
@@ -36,6 +38,11 @@ namespace bigNum {
         friend bool operator<=(const bignum &a, const bignum &b);
 
         friend bool operator==(const bignum &a, const bignum &b);
+
+        friend bignum operator+(const bignum &a, const bignum &b);
+        friend bignum operator-(const bignum &a, const bignum &b);
+        friend bignum operator*(const bignum &a, const bignum &b);
+        friend bignum operator/(const bignum &a, const bignum &b);
 
         std::string number;
         int real_size;

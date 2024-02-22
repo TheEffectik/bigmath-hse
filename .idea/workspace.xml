@@ -25,13 +25,39 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17768219-8815-4cea-b62c-ecc7fcbfcdcb" name="Changes" comment="Add multiplication tests">
+    <list default="true" id="17768219-8815-4cea-b62c-ecc7fcbfcdcb" name="Changes" comment="Refactor code">
+      <change afterPath="$PROJECT_DIR$/Google_tests/test_division.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_lib/operations/division.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Google_tests/add.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Google_tests/add.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Google_tests/multiplication.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Google_tests/multiplication.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Google_tests/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Google_tests/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Google_tests/comparing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Google_tests/test_comparing.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Google_tests/div.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Google_tests/test_subtraction.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Google_tests/multiplication.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Google_tests/test_multiplication.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-914738cd50fa82552e9c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-02-22T00-18-57-0267.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Google_Tests_run-Debug-177d83653113efc7f3ad.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-gmock_main-Debug-50c7df703a4065c5da52.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-main_lib-Debug-bb5ce9946fa8798cc8f6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/add.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/add.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/comparing.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/comparing.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/div.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/div.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/multiplication.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/multiplication.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/test_of_casts.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/test_of_casts.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Google_tests/Google_Tests_run.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Google_tests/Google_Tests_run.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/main_lib/CMakeFiles/main_lib.dir/library.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/main_lib/CMakeFiles/main_lib.dir/library.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/main_lib/CMakeFiles/main_lib.dir/operations/add.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/main_lib/CMakeFiles/main_lib.dir/operations/add.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/main_lib/CMakeFiles/main_lib.dir/operations/div.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/main_lib/CMakeFiles/main_lib.dir/operations/div.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/main_lib/CMakeFiles/main_lib.dir/operations/multiplication.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/main_lib/CMakeFiles/main_lib.dir/operations/multiplication.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/main_lib/libmain_lib.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/main_lib/libmain_lib.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_lib/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/main_lib/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_lib/library.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main_lib/library.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_lib/library.h" beforeDir="false" afterPath="$PROJECT_DIR$/main_lib/library.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_lib/operations/add.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main_lib/operations/add.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_lib/operations/div.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main_lib/operations/div.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_lib/operations/div.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main_lib/operations/subtraction.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_lib/operations/multiplication.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main_lib/operations/multiplication.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,12 +80,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "TheEffectik"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;TheEffectik&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -125,11 +151,6 @@
     <configuration name="Google_tests" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory">
       <method v="2" />
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="bignum" TARGET_NAME="gmock" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -186,7 +207,8 @@
       <workItem from="1708520421417" duration="1059000" />
       <workItem from="1708531528184" duration="1953000" />
       <workItem from="1708541969512" duration="4141000" />
-      <workItem from="1708553635256" duration="5283000" />
+      <workItem from="1708553635256" duration="11822000" />
+      <workItem from="1708569850409" duration="351000" />
     </task>
     <task id="LOCAL-00001" summary="Try to add google tests and add class of bignums">
       <option name="closed" value="true" />
@@ -292,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708562185417</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Refactor code">
+      <option name="closed" value="true" />
+      <created>1708562434824</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708562434824</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,25 +346,21 @@
     <MESSAGE value="Add compairing" />
     <MESSAGE value="Add multiplication" />
     <MESSAGE value="Add multiplication tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add multiplication tests" />
+    <MESSAGE value="Refactor code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main_lib/operations/add.cpp</url>
-          <line>4</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main_lib/library.cpp</url>
-          <line>51</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/main_lib/operations/division.cpp</url>
+          <line>3</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main_lib/operations/multiplication.cpp</url>
-          <line>3</line>
-          <option name="timeStamp" value="9" />
+          <line>23</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
