@@ -3,7 +3,7 @@
 
 using namespace bigNum;
 
-TEST(multiplication, uint){
+TEST(multiplication, uint) {
     bignum a = 123_bn;
     bignum b = 123_bn;
     bignum c = bignum::mul(a, b);
@@ -31,7 +31,7 @@ TEST(multiplication, udouble) {
     ASSERT_EQ(c.real_size, 4);
 }
 
-TEST(multiplication, udoble_uint){
+TEST(multiplication, udoble_uint) {
     bignum a = 123.23_bn;
     bignum b = 123_bn;
     bignum c = bignum::mul(a, b);
@@ -44,8 +44,7 @@ TEST(multiplication, udoble_uint){
     ASSERT_EQ(c.real_size, 4);
 }
 
-
-TEST(multiplication, negative){
+TEST(multiplication, negative) {
     bignum a = -123_bn;
     bignum b = 123_bn;
     bignum c = bignum::mul(a, b);

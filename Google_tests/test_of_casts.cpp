@@ -25,7 +25,6 @@ TEST(TestOfcasts, RealSizeInNUmbers) {
     ASSERT_EQ(bignum(a).real_size, 3);
 }
 
-
 TEST(TestOfCasts, SignInNumbers) {
     bignum x = -1_bn;
     ASSERT_EQ(x.sign, true);

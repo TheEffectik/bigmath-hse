@@ -5,26 +5,37 @@
 #include<string>
 #include<vector>
 
-namespace bigNum{
+namespace bigNum {
     class bignum {
 
     public:
         bignum();
-        bignum(int x);
-        bignum(long long x);
-        bignum(float x);
-        bignum(double x);
-        bignum(std::string x);
-        static bignum uadd(const bignum& a, const bignum& b); // add to private
-        static bignum udiv(const bignum& a, const bignum& b); // add to private
-        static bignum add(const bignum&a, const bignum&b);
-        static bignum mul(const bignum&a, const bignum&b);
 
-        friend bool operator>(const bignum& a, const bignum& b);
-        friend bool operator<(const bignum& a, const bignum& b);
-        friend bool operator>=(const bignum& a, const bignum& b);
-        friend bool operator<=(const bignum& a, const bignum& b);
-        friend bool operator==(const bignum& a, const bignum& b);
+        bignum(int x);
+
+        bignum(long long x);
+
+        bignum(float x);
+
+        bignum(double x);
+
+        bignum(std::string x);
+
+        static bignum uadd(const bignum &a, const bignum &b); // add to private
+        static bignum udiv(const bignum &a, const bignum &b); // add to private
+        static bignum add(const bignum &a, const bignum &b); // add to private
+
+        static bignum mul(const bignum &a, const bignum &b);
+
+        friend bool operator>(const bignum &a, const bignum &b);
+
+        friend bool operator<(const bignum &a, const bignum &b);
+
+        friend bool operator>=(const bignum &a, const bignum &b);
+
+        friend bool operator<=(const bignum &a, const bignum &b);
+
+        friend bool operator==(const bignum &a, const bignum &b);
 
         std::string number;
         int real_size;
@@ -33,7 +44,8 @@ namespace bigNum{
 }
 
 
-bigNum::bignum operator""_bn(const char* str);
+bigNum::bignum operator ""_bn(const char *str);
+
 bigNum::bignum operator-(const bigNum::bignum &a);
 
 

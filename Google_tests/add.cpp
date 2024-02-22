@@ -3,7 +3,7 @@
 
 using namespace bigNum;
 
- TEST(adding, uint){
+TEST(adding, uint) {
     bignum a = 123_bn;
     ASSERT_EQ(a.number, "123");
     ASSERT_EQ(a.real_size, a.number.length());
@@ -33,7 +33,7 @@ TEST(adding, udouble) {
     ASSERT_EQ(c.real_size, 3);
 }
 
-TEST(adding, udoble_uint){
+TEST(adding, udoble_uint) {
     bignum a = 123.23_bn;
     bignum b = 123_bn;
     bignum c = bignum::uadd(a, b);

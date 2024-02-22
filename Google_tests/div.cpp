@@ -3,7 +3,7 @@
 
 using namespace bigNum;
 
-TEST(div, uint){
+TEST(div, uint) {
     bignum a = 123_bn;
     bignum b = 23_bn;
 

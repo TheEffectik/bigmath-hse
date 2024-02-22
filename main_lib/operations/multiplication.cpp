@@ -15,13 +15,14 @@ namespace bigNum {
             res[i + 1] += res[i] / 10;
             x.number += static_cast<char> (res[i] % 10 + '0');
         }
-        x.real_size = static_cast<int>(x.number.length()) - (static_cast<int>(a.number.length()) - a.real_size) - (static_cast<int>(b.number.length()) - b.real_size);
+        x.real_size = static_cast<int>(x.number.length()) - (static_cast<int>(a.number.length()) - a.real_size) -
+                      (static_cast<int>(b.number.length()) - b.real_size);
         while (x.number.back() == '0' && x.real_size > 1) {
             x.real_size--;
             x.number.pop_back();
         }
         x.number = std::string(x.number.rbegin(), x.number.rend());
-        while(x.number.back() == '0'){
+        while (x.number.back() == '0') {
             x.number.pop_back();
         }
         x.real_size = std::min(x.real_size, static_cast<int>(x.number.length()));
