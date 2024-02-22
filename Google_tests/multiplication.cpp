@@ -44,6 +44,7 @@ TEST(multiplication, udoble_uint){
     ASSERT_EQ(c.real_size, 4);
 }
 
+
 TEST(multiplication, negative){
     bignum a = -123_bn;
     bignum b = 123_bn;
