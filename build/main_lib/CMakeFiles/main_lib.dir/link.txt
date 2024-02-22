@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmain_lib.a CMakeFiles/main_lib.dir/library.cpp.o CMakeFiles/main_lib.dir/operations/add.cpp.o CMakeFiles/main_lib.dir/operations/subtraction.cpp.o CMakeFiles/main_lib.dir/operations/multiplication.cpp.o CMakeFiles/main_lib.dir/operations/division.cpp.o
+/usr/bin/ranlib libmain_lib.a
