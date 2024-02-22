@@ -1,5 +1,3 @@
-#include<iostream>
-#include<string>
 #include "library.h"
 
 namespace bigNum {

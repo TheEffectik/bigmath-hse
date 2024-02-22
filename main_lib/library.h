@@ -3,6 +3,7 @@
 
 #include<iostream>
 #include<string>
+#include<vector>
 
 namespace bigNum{
     class bignum {
@@ -17,6 +18,7 @@ namespace bigNum{
         static bignum uadd(const bignum& a, const bignum& b); // add to private
         static bignum udiv(const bignum& a, const bignum& b); // add to private
         static bignum add(const bignum&a, const bignum&b);
+        static bignum mul(const bignum&a, const bignum&b);
 
         friend bool operator>(const bignum& a, const bignum& b);
         friend bool operator<(const bignum& a, const bignum& b);

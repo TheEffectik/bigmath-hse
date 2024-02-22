@@ -10,7 +10,8 @@ include_directories(googletest/include googletest)
 add_executable(Google_Tests_run test_of_casts.cpp
         add.cpp
         div.cpp
-        comparing.cpp)
+        comparing.cpp
+        multiplication.cpp)
 
 target_link_libraries(Google_Tests_run main_lib)
 
