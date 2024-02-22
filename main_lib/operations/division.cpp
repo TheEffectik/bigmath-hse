@@ -15,51 +15,61 @@ namespace bigNum {
         for(;a_from_dot < 0;a_from_dot++){
             a2.number += '0';
         }
+        a2.real_size += b_after_zero + precision;
         a2.sign = false;
         bignum b2 = b;
         b2.real_size = b2.number.length();
         b2.sign = false;
 
         bignum ost = bignum();
-        ost.real_size = b.number.length();
+        ost.real_size = 0;
         int i = 0;
 
-        while(i < a2.number.length()){
-            if(ost.number.length()) {
-                if (ost == 0) {
-                    ost.number = "";
-                    ost.real_size = 0;
-                }
-                ost.number += a.number[i++];
+        for(;i < a2.real_size && i < b2.number.length();i++){
+            if(ost.number.length() + (a2.number[i] - '0')) {
+                ost.number += a2.number[i];
                 ost.real_size++;
             }
-            else{
-                for(;i < a2.number.length() && i < b2.number.length();i++){
-                    if(ost.number.length() + (a.number[i] - '0')) {
-                        ost.number += a.number[i];
-                        x.real_size++;
-                    }
-                }
-            }
+        }
+
+        while(i <= a2.real_size) {
             int l = 0;
             int r = 10;
-            while (r - l > 1){
+            while (r - l > 1) {
                 int m = (r + l) / 2;
-                if(b2 * m <= ost){
+                if (b2 * m <= ost) {
                     l = m;
                 } else {
                     r = m;
                 }
             }
-            if(x.number.length() + l) {
-                x.number += static_cast<char>(l + '0');
-                ost = ost - b2 * l;
+            x.number += static_cast<char>(l + '0');
+            ost = ost - b2 * l;
+            if (i == a2.real_size) break;
+
+            if(ost.number == "0"){
+                ost.number = "";
+                ost.real_size = 0;
             }
+            ost.number += a2.number[i++];
+            ost.real_size++;
         }
+
         if(x.number == ""){
             x.number = "0";
         }
         x.real_size = x.number.length() - precision;
+
+        x.number = std::string(x.number.rbegin(), x.number.rend());
+        while (x.number.back() == '0' && x.real_size > 1) {
+            x.number.pop_back();
+            x.real_size--;
+        }
+        while(x.number.length() < precision + 1){
+            x.number += '0';
+        }
+
+        x.number = std::string(x.number.rbegin(), x.number.rend());
         return x;
     }
 }

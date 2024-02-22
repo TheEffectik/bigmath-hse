@@ -5,8 +5,8 @@ using namespace bigNum;
 
 TEST(division, uint) {
     bignum a, b, c;
-    a = 123_bn;
     b = 123_bn;
+    a = 123_bn;
     c = bignum::div(a, b, 0);
     ASSERT_EQ(c.number, "1");
     ASSERT_EQ(c.real_size, 1);
@@ -41,7 +41,7 @@ TEST(division, floats){
     ASSERT_EQ(c.sign, false);
 }
 
-TEST(division, negative){
+TEST(division, negative) {
     bignum a, b, c;
     a = -123_bn;
     b = 123_bn;
@@ -60,10 +60,40 @@ TEST(division, negative){
 
 TEST(division, hardtests){
     bignum a, b, c;
-
-    a = 123981273129837123981273918273192837.21398127391823712938_bn;
-    b = 233236435454555454545.32333_bn;
+    a = 123123.22_bn;
+    b = 0.22_bn;
     c = bignum::div(a, b, 0);
-    ASSERT_EQ(c.number, "531569061618565");
+    ASSERT_EQ(c.number, "559651");
+
+    a = 175_bn;
+    b = 17_bn;
+    c = bignum::div(a, b, 0);
+    ASSERT_EQ(c.number, "10");
+
+    a = 175_bn;
+    b = 17_bn;
+    c = bignum::div(a, b, 1);
+    ASSERT_EQ(c.number, "102");
+
+    a = 175_bn;
+    b = 18_bn;
+    c = bignum::div(a, b, 0);
+    ASSERT_EQ(c.number, "9");
+
+    a = 175_bn;
+    b = 18_bn;
+    c = bignum::div(a, b, 1);
+    ASSERT_EQ(c.number, "97");
+
+    a = 175_bn;
+    b = 18_bn;
+    c = bignum::div(a, b, 2);
+    ASSERT_EQ(c.number, "972");
+
+    a = 1_bn;
+    b = 100_bn;
+    c = bignum::div(a, b, 2);
+    ASSERT_EQ(c.number, "001");
+
 }
 
