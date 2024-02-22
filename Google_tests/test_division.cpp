@@ -95,5 +95,19 @@ TEST(division, hardtests){
     c = bignum::div(a, b, 2);
     ASSERT_EQ(c.number, "001");
 
+    a = 2183.2387_bn;
+    b = 123.23_bn;
+    c = bignum::div(a, b, 63);
+    ASSERT_EQ(c.number, "17716779193378235819199870161486650977846303659823095025561957315");
+    ASSERT_EQ(c.real_size, 2);
+
+    b = 123.2311_bn;
+    c = bignum::div(a, b, 63);
+    ASSERT_EQ(c.number, "17716621047771220089733841538377893242858336897098216278196007339");
+    ASSERT_EQ(c.real_size, 2);
+
+    a = 1;
+    b = 4096;
+    c = bignum::div(a, b, 100);
 }
 

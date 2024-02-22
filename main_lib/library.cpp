@@ -90,6 +90,39 @@ namespace bigNum {
         return bignum::mul(a, b);
     }
 
+    bignum operator/(const bignum &a, const bignum &b) {
+        return bignum::div(a, b, 0);
+    }
+
+    bignum bignum::pi(int precision) {
+        clock_t start, finish;
+        start = clock();
+        bignum P = 0;
+        bignum curr = 1;
+
+        bignum pr = bignum();
+        pr.real_size = 1;
+        for (int i = 0; i < precision; i++) {
+            pr.number += '0';
+        }
+        pr.number += '1';
+
+        int k = 0;
+
+        bignum res = 1;
+        do {
+            res = bignum::div(1, curr, precision);
+            bignum res1 = bignum::div(4, (8 * k + 1), 100) - bignum::div(2, 8 * k + 4, 100) - bignum::div(1, 8 * k + 5,100) - bignum::div(1, 8 * k + 6, 100);
+            res = res * res1;
+            P = P + res;
+            curr = curr * 16_bn;
+            k++;
+        } while (res > pr);
+        finish = clock();
+        double duration = (double) (finish - start) / CLOCKS_PER_SEC;
+        std::cout << duration << ' ' << k << std::endl;
+        return P;
+    }
 
 }
 

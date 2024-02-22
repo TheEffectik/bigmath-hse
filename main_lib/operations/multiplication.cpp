@@ -22,9 +22,7 @@ namespace bigNum {
             x.number.pop_back();
         }
         x.number = std::string(x.number.rbegin(), x.number.rend());
-        while (x.number.back() == '0' && x.number.size() != x.real_size ) {
-            x.number.pop_back();
-        }
+        while(x.number.back() == '0' && x.number.length() != x.real_size) x.number.pop_back();
         x.real_size = std::min(x.real_size, static_cast<int>(x.number.length()));
         return x;
     }

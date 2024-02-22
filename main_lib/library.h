@@ -44,6 +44,8 @@ namespace bigNum {
         friend bignum operator*(const bignum &a, const bignum &b);
         friend bignum operator/(const bignum &a, const bignum &b);
 
+        static bignum pi(int precision);
+
         std::string number;
         int real_size;
         bool sign;

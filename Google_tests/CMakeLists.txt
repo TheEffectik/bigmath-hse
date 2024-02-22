@@ -12,7 +12,8 @@ add_executable(Google_Tests_run test_of_casts.cpp
         test_subtraction.cpp
         test_comparing.cpp
         test_multiplication.cpp
-        test_division.cpp)
+        test_division.cpp
+        pi.cpp)
 
 target_link_libraries(Google_Tests_run main_lib)
 

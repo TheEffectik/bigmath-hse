@@ -41,11 +41,8 @@ namespace bigNum {
             x.number.pop_back();
         }
         x.number = std::string(x.number.rbegin(), x.number.rend());
-        while (x.number.back() == '0' && x.number.size() > 1) {
-            x.number.pop_back();
-        }
         x.real_size = std::min(x.real_size, static_cast<int>(x.number.length()));
-
+        while(x.number.back() == '0' && x.number.length() > x.real_size) x.number.pop_back();
         return x;
     }
     bignum bignum::sub(const bignum &a, const bignum &b) {

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/andru/CLionProject/math/Google_tests/add.cpp" "Google_tests/CMakeFiles/Google_Tests_run.dir/add.cpp.o" "gcc" "Google_tests/CMakeFiles/Google_Tests_run.dir/add.cpp.o.d"
+  "/mnt/c/Users/andru/CLionProject/math/Google_tests/pi.cpp" "Google_tests/CMakeFiles/Google_Tests_run.dir/pi.cpp.o" "gcc" "Google_tests/CMakeFiles/Google_Tests_run.dir/pi.cpp.o.d"
   "/mnt/c/Users/andru/CLionProject/math/Google_tests/test_comparing.cpp" "Google_tests/CMakeFiles/Google_Tests_run.dir/test_comparing.cpp.o" "gcc" "Google_tests/CMakeFiles/Google_Tests_run.dir/test_comparing.cpp.o.d"
   "/mnt/c/Users/andru/CLionProject/math/Google_tests/test_division.cpp" "Google_tests/CMakeFiles/Google_Tests_run.dir/test_division.cpp.o" "gcc" "Google_tests/CMakeFiles/Google_Tests_run.dir/test_division.cpp.o.d"
   "/mnt/c/Users/andru/CLionProject/math/Google_tests/test_multiplication.cpp" "Google_tests/CMakeFiles/Google_Tests_run.dir/test_multiplication.cpp.o" "gcc" "Google_tests/CMakeFiles/Google_Tests_run.dir/test_multiplication.cpp.o.d"

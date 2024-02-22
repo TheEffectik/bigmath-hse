@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Google_Tests_run.dir/add.cpp.o"
   "CMakeFiles/Google_Tests_run.dir/add.cpp.o.d"
+  "CMakeFiles/Google_Tests_run.dir/pi.cpp.o"
+  "CMakeFiles/Google_Tests_run.dir/pi.cpp.o.d"
   "CMakeFiles/Google_Tests_run.dir/test_comparing.cpp.o"
   "CMakeFiles/Google_Tests_run.dir/test_comparing.cpp.o.d"
   "CMakeFiles/Google_Tests_run.dir/test_division.cpp.o"

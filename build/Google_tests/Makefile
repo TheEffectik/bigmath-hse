@@ -199,6 +199,30 @@ add.cpp.s:
 	cd /mnt/c/Users/andru/CLionProject/math/build && $(MAKE) $(MAKESILENT) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/add.cpp.s
 .PHONY : add.cpp.s
 
+pi.o: pi.cpp.o
+.PHONY : pi.o
+
+# target to build an object file
+pi.cpp.o:
+	cd /mnt/c/Users/andru/CLionProject/math/build && $(MAKE) $(MAKESILENT) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/pi.cpp.o
+.PHONY : pi.cpp.o
+
+pi.i: pi.cpp.i
+.PHONY : pi.i
+
+# target to preprocess a source file
+pi.cpp.i:
+	cd /mnt/c/Users/andru/CLionProject/math/build && $(MAKE) $(MAKESILENT) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/pi.cpp.i
+.PHONY : pi.cpp.i
+
+pi.s: pi.cpp.s
+.PHONY : pi.s
+
+# target to generate assembly for a file
+pi.cpp.s:
+	cd /mnt/c/Users/andru/CLionProject/math/build && $(MAKE) $(MAKESILENT) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/pi.cpp.s
+.PHONY : pi.cpp.s
+
 test_comparing.o: test_comparing.cpp.o
 .PHONY : test_comparing.o
 
@@ -335,6 +359,9 @@ help:
 	@echo "... add.o"
 	@echo "... add.i"
 	@echo "... add.s"
+	@echo "... pi.o"
+	@echo "... pi.i"
+	@echo "... pi.s"
 	@echo "... test_comparing.o"
 	@echo "... test_comparing.i"
 	@echo "... test_comparing.s"
